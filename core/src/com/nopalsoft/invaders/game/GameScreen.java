@@ -19,7 +19,10 @@ import com.nopalsoft.invaders.MainInvaders;
 import com.nopalsoft.invaders.Settings;
 import com.nopalsoft.invaders.screens.MainMenuScreen;
 import com.nopalsoft.invaders.screens.Screens;
-
+/*import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.DocumentReference;
+import java.util.HashMap;
+import java.util.Map;*/
 public class GameScreen extends Screens {
     FPSLogger fps = new FPSLogger();
 
@@ -451,6 +454,7 @@ public class GameScreen extends Screens {
 
     @Override
     public void hide() {
+      //  saveScoreAndLevel(oWorld.score, oWorld.currentLevel);
         Settings.agregarPuntuacion(oWorld.score);
         super.hide();
     }
@@ -485,5 +489,34 @@ public class GameScreen extends Screens {
         }
         return false;
     }
+    /*private void saveScoreAndLevel(int score, int level) {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        // Define la estructura de tu base de datos en Firestore
+        // Supongamos que tienes una colección "scores" con documentos para cada jugador
+        // y un campo "score" para almacenar el puntaje y un campo "level" para almacenar el nivel.
+
+        // Crea un nuevo mapa para almacenar los datos
+        Map<String, Object> data = new HashMap<>();
+        data.put("score", score);
+        data.put("level", level);
+
+        // Agrega un nuevo documento a la colección "scores"
+        db.collection("scores")
+                .add(data)
+                .addOnSuccessListener(documentReference -> {
+                    // Maneja el éxito, si es necesario
+                    // Por ejemplo, muestra un mensaje al usuario
+                    // o realiza alguna otra acción
+                    System.out.println("Documento agregado con ID: " + documentReference.getId());
+                })
+                .addOnFailureListener(e -> {
+                    // Maneja el error, si es necesario
+                    // Por ejemplo, muestra un mensaje de error al usuario
+                    // o realiza alguna otra acción
+                    System.err.println("Error al agregar documento: " + e);
+                });
+    }
+*/
 
 }
