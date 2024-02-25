@@ -8,7 +8,7 @@
 
 
 # Link de descarga
-- https://drive.google.com/file/d/1AMDd3DUtkJyrj-t1Vn5sJauREc_5Tp_a/view?usp=drive_link
+- [https://drive.google.com/file/d/1AMDd3DUtkJyrj-t1Vn5sJauREc_5Tp_a/view?usp=drive_link](https://drive.google.com/file/d/1rWOskmhkYSx7GK2OF6xe-2zLUD750C02/view?usp=sharing)
 
 
 # Imagenes funcionamiento
