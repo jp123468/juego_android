@@ -7,8 +7,11 @@
 - Danny Vinueza
 
 
-# Link de descarga
+# Link de descarga apk debug
 - https://drive.google.com/file/d/1mua9Cr68XAz9hGeCb9FxnKosiZEFwX-K/view?usp=sharing
+
+# Link de descarga apk release
+- https://drive.google.com/file/d/1Xei_QZgj3iZz8ftPIdOsIhOgdfbUbEB7/view?usp=sharing
 
 
 # Imagenes funcionamiento
